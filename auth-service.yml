@@ -5,7 +5,7 @@ spring:
   application:
     name: auth-service
 
-# JWT 토큰 생성에 필요한 설정값
-token:
-  expiration_time: 86400000 # 유효기간: 1일 (밀리초 단위)
-  secret: my_super_secret_key_heedae93_msa_project_1234 # User Service와 똑같은 키여야 함!
+service:
+  jwt:
+    expiration: 86400000 # 유효기간: 1일 (밀리초 단위).
+    secret-key: "bXlfc3VwZXJfc2VjcmV0X2tleV9oZWVkYWU5M19tc2FfcHJvamVjdF8xMjM0"
