@@ -1,0 +1,20 @@
+server:
+  port: 0 # 랜덤 포트 사용
+
+spring:
+  datasource:
+    driver-class-name: org.h2.Driver
+    url: jdbc:h2:mem:userdb
+    username: sa
+    password: 
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+
+# 토큰 검증용 비밀키 (임시)
+token:
+  secret: my_super_secret_key_heedae93_msa_project_1234
